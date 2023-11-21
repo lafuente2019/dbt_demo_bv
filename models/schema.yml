@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: teams_bv
+    description: "Nome e Time dos time bv"
+    columns:
+      - name: Nome
+        description: "Nome dos integrante do time"
+        tests:
+          - not_null
+      - name: Time
+        description: "Nome do time dos integrantes"
+        tests:
+          - not_null
+
+  - name: stage_teams_bv
+    description: "Dados de sentimentos dos integrantes do teams_bv"
+    columns:
+      - name: Status_teams
+        description: "status de sentimento"
+        tests:
+          - not_null
+
+  - name: analise_status_teams_bv
+    description: "agrupamento do status_teams"
+    columns:
+      - name: Status_teams
+        description: "status de sentimento"
+        tests:
+          - accepted_values:
+              values: ['Incaivel', 'Vergonhoso','Otimista','Ferias','Orgulhoso']    
+        
