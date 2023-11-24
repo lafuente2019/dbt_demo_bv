@@ -1,3 +1,3 @@
 SELECT
     *
-FROM dbt_vlafuentejunior.teams_bv
+from {{ source('sources', 'teams_bv') }}
