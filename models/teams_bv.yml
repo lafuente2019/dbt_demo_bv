@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: teams_bv
-    description: "Nome e Time dos time bv"
+    description: "Nome e Time da equipe bv"
     columns:
       - name: Nome
         description: "Nome dos integrante do time"
@@ -14,7 +14,7 @@ models:
           - not_null
 
   - name: stage_teams_bv
-    description: "Dados de sentimentos dos integrantes do teams_bv"
+    description: "Sentimentos dos integrantes da equipe bv"
     columns:
       - name: Status_teams
         description: "status de sentimento"
