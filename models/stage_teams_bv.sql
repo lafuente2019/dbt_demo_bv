@@ -5,7 +5,7 @@ SELECT
 *,
 CASE
 WHEN time = 'Palmeiras' THEN 'Orgulhosos'
-WHEN time = 'São Paulo' THEN ''
+WHEN time = 'São Paulo' THEN 'Otimistas'
 WHEN time = 'Corinthians' THEN 'Desesperados'
 WHEN time = 'Cruzeiro' THEN 'Desesperados'
 WHEN time = 'Internacional' THEN 'Desesperados'
