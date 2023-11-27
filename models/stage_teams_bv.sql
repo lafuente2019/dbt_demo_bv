@@ -10,4 +10,4 @@ WHEN time = 'Corinthians' THEN 'Otimista'
 WHEN time = 'Santos' THEN 'Incaivel'
 WHEN time = 'Flamengo' THEN 'Vergonhoso'
 END AS Status_teams
-FROM dbt_vlafuentejunior.teams_bv
+FROM teams_bv

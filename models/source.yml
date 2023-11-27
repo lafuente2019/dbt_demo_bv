@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-    - name: sources
-      database: dbt_vlafuentejunior
-      schema: public
-      tables:
-        - name: teams_bv
+  - name: dbt_vlafuentejunior
+    database: dbt-demo-bv
+    schema: dbt_vlafuentejunior
+    tables:
+      - name: teams_bv

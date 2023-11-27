@@ -28,5 +28,5 @@ models:
         description: "status de sentimento"
         tests:
           - accepted_values:
-              values: ['Incaivel', 'Vergonhoso','Otimista','Ferias','Orgulhoso']    
-        
+              values:
+                ["Incaivel", "Vergonhoso", "Otimista", "Ferias", "Orgulhoso"]

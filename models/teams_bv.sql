@@ -1,3 +1,8 @@
+with time_bv as (
 SELECT
     *
-FROM dbt_vlafuentejunior.teams_bv
+FROM {{ source('dbt_vlafuentejunior', 'teams_bv') }} --dbt_vlafuentejunior.teams_bv
+)
+SELECT
+    *
+FROM time_bv
