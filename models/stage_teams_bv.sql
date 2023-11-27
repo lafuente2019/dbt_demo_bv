@@ -9,7 +9,7 @@ WHEN time = 'São Paulo' THEN 'Otimistas'
 WHEN time = 'Corinthians' THEN 'Desesperados'
 WHEN time = 'Cruzeiro' THEN 'Desesperados'
 WHEN time = 'Internacional' THEN 'Desesperados'
-WHEN time = 'Nenhum' THEN 'Decidiram não sofrer'
+WHEN time = 'Nenhum' THEN 'Sem time'
 WHEN time = 'Flamengo' THEN 'Frustados'
 END AS Status_teams
 FROM time_bv
