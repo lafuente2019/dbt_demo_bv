@@ -29,4 +29,4 @@ models:
         tests:
           - accepted_values:
               values:
-                ["Desesperados", "Sem time", "Otimista","Orgulhoso","Frustados"]
+                ["Desesperados", "Sem time", "Otimistas","Orgulhosos","Frustados"]
