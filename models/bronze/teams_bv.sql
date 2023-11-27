@@ -1,8 +1,9 @@
-with time_bv as (
+with bronze_teams_bv as (
 SELECT
-    *
-FROM {{ source('dbt_vlafuentejunior', 'teams_bv') }} --dbt_vlafuentejunior.teams_bv
+    Nome
+   ,Time
+FROM {{ source('dbt_vlafuentejunior', 'teams_bv') }}
 )
 SELECT
     *
-FROM time_bv
+FROM bronze_teams_bv

@@ -1,5 +1,8 @@
-with time_bv as (
-    SELECT * FROM {{ref('teams_bv')}}
+with silver_teams_bv as (
+    SELECT
+        Nome
+       ,Time 
+    FROM {{ref('teams_bv')}}
 )
 SELECT 
 *,
@@ -12,4 +15,4 @@ WHEN time = 'Internacional' THEN 'Desesperados'
 WHEN time = 'Nenhum' THEN 'Sem time'
 WHEN time = 'Flamengo' THEN 'Frustados'
 END AS Status_teams
-FROM time_bv
+FROM silver_teams_bv
