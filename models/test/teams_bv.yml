@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: teams_bv
-    description: "Nome e Time de coração de cada integrante da equipe bv"
+    description: "Nome e Time de coração de cada integrante da equipe"
     columns:
       - name: Nome
         description: "Nome dos integrante do time"
