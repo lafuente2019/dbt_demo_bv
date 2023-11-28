@@ -2,19 +2,19 @@ version: 2
 
 models:
   - name: teams_bv
-    description: "Nome e Time da equipe bv"
+    description: "Nome e Time de coração de cada integrante da equipe bv"
     columns:
       - name: Nome
         description: "Nome dos integrante do time"
         tests:
           - not_null
       - name: Time
-        description: "Nome do time dos integrantes"
+        description: "Nome do time do coração dos integrantes"
         tests:
           - not_null
 
   - name: stage_teams_bv
-    description: "Sentimentos dos integrantes da equipe bv"
+    description: "Sentimentos dos integrantes da equipe bv com relação ao time de coração"
     columns:
       - name: Status_teams
         description: "status de sentimento"
@@ -22,7 +22,7 @@ models:
           - not_null
 
   - name: analise_status_teams_bv
-    description: "agrupamento do status_teams"
+    description: "agrupamento do campo status_teams"
     columns:
       - name: Status_teams
         description: "status de sentimento"
